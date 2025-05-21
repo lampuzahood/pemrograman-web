@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang Belanja | FKLH Skins</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="checkout-modal" class="modal">
+      <div class="modal-content">
+        <p>Apakah kamu yakin ingin checkout dan mengosongkan keranjang?</p>
+        <div class="modal-buttons">
+          <button id="confirm-checkout">Ya, Checkout</button>
+          <button id="cancel-checkout">Batal</button>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <h1 class="logo">faklahskin store</h1>
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Beranda</a>
+            </li>
+            <li>
+              <a href="produk.html">Produk</a>
+            </li>
+            <li>
+              <a href="tentang.html">Tentang</a>
+            </li>
+            <li>
+              <a href="kontak.html">Kontak</a>
+            </li>
+            <li>
+              <a href="keranjang.html" style="position: relative;"> 🛒 <span id="keranjang-count" style="
+              background: red;
+              color: white;
+              border-radius: 50%;
+              padding: 2px 6px;
+              font-size: 12px;
+              position: absolute;
+              top: -10px;
+              right: -10px;
+              z-index: 10000; /* Below navbar */
+            ">0</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="keranjang">
+      <div class="container">
+        <h1>Keranjang Belanja Kamu</h1>
+        <div id="daftar-keranjang"></div>
+        <div class="keranjang-bottom">
+          <div class="total-text">
+            <p>
+              <strong>Total:</strong>
+              <span id="total-harga">Rp 0</span>
+            </p>
+          </div>
+          <button id="checkout-btn" onclick="checkout()">Ya, Checkout</button>
+        </div>
+      </div>
+    </main>
+    <script src="./js/product.js"></script>
+    <script src="./js/keranjang.js"></script>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>𝑭𝑲𝑳𝑯 𝑺𝒌𝒊𝒏𝒔</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="./js/product.js"></script>
+    <!-- <script src="./js/products.js"></script> -->
+  </head>
+  <body>
+    <div class="toast" id="popup">
+      <span id="popup-message"></span>
+    </div>
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <h1 class="logo">faklahskin store</h1>
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Beranda</a>
+            </li>
+            <li>
+              <a href="produk.html">Produk</a>
+            </li>
+            <li>
+              <a href="tentang.html">Tentang</a>
+            </li>
+            <li>
+              <a href="kontak.html">Kontak</a>
+            </li>
+            <li>
+              <a href="keranjang.html" style="position: relative;"> 🛒 <span id="keranjang-count" style="
+                background: red;
+                color: white;
+                border-radius: 50%;
+                padding: 2px 6px;
+                font-size: 12px;
+                position: absolute;
+                top: -10px;
+                right: -10px;
+              ">0</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="categories-container">
+      <h3 class="kategori-title">Pilih Kategori Produk</h3>
+      <p class="kategori-subtitle">Temukan produk sesuai kebutuhanmu.</p>
+      <div class="category-grid">
+        <button class="category-btn" data-category="all">Semua</button>
+        <button class="category-btn" data-category="handphone">Handphone</button>
+        <button class="category-btn" data-category="vape">Vape</button>
+        <button class="category-btn" data-category="drone">Drone</button>
+        <button class="category-btn" data-category="kamera">Kamera</button>
+        <button class="category-btn" data-category="tab">Tab</button>
+        <button class="category-btn" data-category="laptop">Laptop</button>
+      </div>
+    </section>
+    <!-- Kategori: Handphone -->
+    <div class="product-category handphone-category">
+      <h4 class="category-title">Handphone</h4>
+      <div class="product-grid" id="handphone-grid"></div>
+    </div>
+    <!-- Kategori: Vape -->
+    <div class="product-category vape-category">
+      <h4 class="category-title">Vape</h4>
+      <div class="product-grid" id="vape-grid"></div>
+    </div>
+    <!-- Kategori: Drone -->
+    <div class="product-category drone-category">
+      <h4 class="category-title">Drone</h4>
+      <div class="product-grid" id="drone-grid"></div>
+    </div>
+    <!-- Kategori: Kamera -->
+    <div class="product-category kamera-category">
+      <h4 class="category-title">Kamera</h4>
+      <div class="product-grid" id="kamera-grid"></div>
+    </div>
+    <!-- Kategori: Tab -->
+    <div class="product-category tab-category">
+      <h4 class="category-title">Tab</h4>
+      <div class="product-grid" id="tab-grid"></div>
+    </div>
+    <!-- Kategori: Laptop -->
+    <div class="product-category laptop-category">
+      <h4 class="category-title">Laptop</h4>
+      <div class="product-grid" id="laptop-grid"></div>
+    </div>
+    <section class="products container">
+      <h3>Produk Populer</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://down-tw.img.susercontent.com/file/id-11134207-6ke1k-lr2mkbwwvvt912" alt="SAMSUNG S24 ULTRA">
+          <h4>SAMSUNG S24 ULTRA</h4>
+          <p class="price">Rp 40.000</p>
+          <p>Skins design motodology untuk Samsung S24 Ultra.</p>
+          <button class="btn-tambah" data-nama="SAMSUNG S24 ULTRA" data-harga="40000">Tambah</button>
+          <button class="btn-beli" data-nama="SAMSUNG S24 ULTRA" data-harga="40000">Beli</button>
+        </div>
+        <div class="product-card">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98w-lq1kywa4yj7664" alt="DJI MAVIC 3 PRO">
+          <h4>DJI MAVIC 3 PRO</h4>
+          <p class="price">Rp 135.000</p>
+          <p>Drone profesional dengan kamera kualitas tinggi dan stabilisasi luar biasa.</p>
+          <button class="btn-tambah" data-nama="DJI MAVIC 3 PRO" data-harga="135000">Tambah</button>
+          <button class="btn-beli" data-nama="DJI MAVIC 3 PRO" data-harga="135000">Beli</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2024/12/19/eeba8a49-1486-4a8a-bdca-ba0181c5aa30.jpg" alt="HOTCIG R233">
+          <h4>HOTCIG R233</h4>
+          <p class="price">Rp 38.999</p>
+          <p>Mod vape HOTCIG R233 dengan desain elegan dan performa tinggi.</p>
+          <button class="btn-tambah" data-nama="HOTCIG R233" data-harga="38999">Tambah</button>
+          <button class="btn-beli" data-nama="HOTCIG R233" data-harga="38999">Beli</button>
+        </div>
+        <div class="product-card">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98s-lz1mc3rsryzicb@resize_w450_nl.webp" alt="INFINIX XPAD">
+          <h4>INFINIX XPAD</h4>
+          <p class="price">Rp 52.000</p>
+          <p>Tablet Infinix XPAD ringan dan multifungsi untuk produktivitas harian.</p>
+          <button class="btn-tambah" data-nama="INFINIX XPAD" data-harga="52000">Tambah</button>
+          <button class="btn-beli" data-nama="INFINIX XPAD" data-harga="52000">Beli</button>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const buttons = document.querySelectorAll(".category-btn");
+        const categories = document.querySelectorAll(".product-category");
+        buttons.forEach(button => {
+          button.addEventListener("click", () => {
+            const selectedCategory = button.getAttribute("data-category");
+            categories.forEach(cat => cat.style.display = "none");
+            if (selectedCategory === "all") {
+              categories.forEach(cat => cat.style.display = "block");
+            } else {
+              document.querySelector(`.${selectedCategory}-category`).style.display = "block";
+            }
+            buttons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+          });
+        });
+        window.onload = () => {
+          document.querySelector('.category-btn[data-category="all"]').click();
+        };
+        const formatRupiah = (angka) => {
+          return "Rp " + angka.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        };
+        const kategoriMap = {
+          phone: "handphone-grid",
+          vape: "vape-grid",
+          drone: "drone-grid",
+          camera: "kamera-grid",
+          tab: "tab-grid",
+          laptop: "laptop-grid"
+        };
+        products.forEach(product => {
+          const containerId = kategoriMap[product.type];
+          if (!containerId) return; // lewati kalau tidak ada kategori yang cocok
+          const container = document.getElementById(containerId);
+          if (!container) return;
+          const card = document.createElement("div");
+          card.className = "product-card";
+          card.setAttribute("data-category", product.type);
+          card.innerHTML = `
+        
+								<img src="${product.image}" alt="${product.name}">
+									<h4>${product.name}</h4>
+									<p class="price">${formatRupiah(product.price)}</p>
+									<p>${product.description}</p>
+									<button class="btn-tambah" data-nama="${product.name}" data-harga="${product.price}">Tambah</button>
+									<button class="btn-beli" data-nama="${product.name}" data-harga="${product.price}">Beli</button>
+      `;
+          container.appendChild(card);
+        });
+      });
+    </script>
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 FKLH SKINS</p>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/beli.js"></script>
+</html>
